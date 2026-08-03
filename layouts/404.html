@@ -1,0 +1,54 @@
+{{ define "main" }}
+<!-- Start Hero -->
+{{ $homeURL := .Site.Home.RelPermalink }}
+<section class="relative table w-full py-36" id="start">
+    <div class="absolute inset-0">
+      {{ partial "components/image-responsive.html" (dict
+        "src" (.Site.Params.background_404 | default "images/1.jpg")
+        "alt" "404 page background"
+        "class" "w-full h-full object-cover object-center"
+        "loading" "eager"
+        "fetchpriority" "high"
+        "sizes" "(max-width: 1920px) 100vw, 1920px"
+        "maxDisplayWidth" 1920
+        "quality" 98
+      ) }}
+    </div>
+    <div class="absolute inset-0 bg-gray-900/75"></div>
+    <div class="container relative">
+        <div class="grid grid-cols-1 pb-8 text-center mt-10">
+            <h1 class="md:text-6xl text-4xl md:leading-normal tracking-wide leading-normal font-bold text-white">404: Page Not Found</h1>
+        </div>
+    </div>
+</section>
+<div class="relative">
+    <div class="shape absolute sm:-bottom-px -bottom-[2px] start-0 end-0 overflow-hidden z-1 text-white">
+        <svg class="w-full h-auto scale-[2.0] origin-top" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start Content -->
+<section class="relative mt-24 mb-36 z-10">
+    <div class="container relative">
+        <div class="grid grid-cols-1 text-center">
+            <div class="content">
+                <h2 class="title text-3xl md:text-4xl font-semibold">Nothing to see here.</h2>
+                <p class="text-slate-500 text-xl md:text-2xl mt-4 max-w-2xl mx-auto">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+            </div>
+            
+            <div class="content mt-8 flex flex-wrap justify-center gap-4">
+                <a href="{{ $homeURL }}" title="Home" class="py-3 px-6 inline-block font-semibold tracking-wide border align-middle duration-500 text-lg text-center bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-blue-700 text-white rounded-md">
+                    <i class="uil uil-home"></i> Return to Homepage
+                </a>
+                
+                <a href="/#map-section" title="Contact" class="py-3 px-6 inline-block font-semibold tracking-wide border align-middle duration-500 text-lg text-center bg-transparent hover:bg-slate-50 border-slate-300 hover:border-slate-400 text-slate-800 rounded-md">
+                    Contact the Shop
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,39 @@
+<nav id="topnav" class="defaultscroll is-sticky">
+    <div class="container relative">
+        <a class="logo" href="{{ "/" | relLangURL }}">
+            {{ $siteTitle := .Site.Title }}
+            {{ with resources.GetMatch "images/navbar/logo-dark.svg" }}
+            <img src="{{ .RelPermalink }}" class="l-dark h-[54px] w-auto" width="200" height="50" fetchpriority="high" alt="{{ $siteTitle }} Logo">
+            {{ end }}
+            {{ with resources.GetMatch "images/navbar/logo-light.svg" }}
+            <img src="{{ .RelPermalink }}" class="l-light h-[54px] w-auto" width="200" height="50" fetchpriority="high" alt="{{ $siteTitle }} Logo">
+            {{ end }}
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                    <div class="lines"><span></span><span></span><span></span></div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation" class="transition-transform duration-300 ease-in-out">
+            <ul class="navigation-menu nav-light justify-end">
+                {{ range .Site.Menus.main }}
+                  {{ if eq .Identifier "services" }}
+                    <li class="has-submenu services-has-submenu parent-parent-menu-item">
+                      <a href="#" onclick="return false;">{{ .Name }}</a><span class="menu-arrow"></span>
+                      <ul class="submenu services-submenu"><li><ul>
+                        {{ range $.Site.Menus.services }}
+                          <li><a href="{{ .URL | safeURL }}" class="sub-menu-item text-base"><i class="{{ .Params.icon }}"></i> {{ .Name }}{{ if .Params.extraSpacing }}&nbsp;&nbsp;&nbsp;{{ end }}</a></li>
+                        {{ end }}
+                      </ul></li></ul>
+                    </li>
+                  {{ else }}
+                    <li><a href="{{ .URL | safeURL }}" class="sub-menu-item">{{ .Name }}</a></li>
+                  {{ end }}
+                {{ end }}
+                
+            </ul>
+        </div>
+    </div>
+</nav>

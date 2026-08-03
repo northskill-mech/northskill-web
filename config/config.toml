@@ -1,0 +1,18 @@
+baseURL = 'https://northskill.com/'
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+languageCode = 'en'
+title = 'Northskill Mechanix Inc.'
+description = 'Automotive Repair Shop'
+uglyURLs = false
+disableKinds = ["taxonomy", "term"]
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+noClasses = true
+

@@ -1,0 +1,40 @@
+baseURL = "https://northskill.com/"
+languageCode = "en-us"
+title = "Northskill"
+
+
+# Allow raw HTML for the block theme
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# --- MENUS ---
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 10
+
+[[menu.main]]
+name = "Services"
+url = "/services/"
+weight = 20
+
+[[menu.main]]
+name = "About Us"
+url = "/about/"
+weight = 40
+
+[[menu.main]]
+name = "Contact"
+url = "/#contact"
+weight = 80
+
+[[menu.footer]]
+identifier = "website"
+name = "Company"
+url = "#"
+weight = 10
+
+
