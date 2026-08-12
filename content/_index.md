@@ -19,16 +19,16 @@ blocks:
 
   - block: services
     title: "Galiano Island Mechanic Services"
-    subtitle: "Complete automotive care, heavy recovery, and roadside assistance for Galiano Island."
+    subtitle: "Complete automotive care, recovery, and roadside assistance for Galiano Island."
     items:
       - title: "Full-Service Auto Repair"
-        description: "From routine oil changes and brake jobs to complex engine diagnostics, we keep your vehicle running safely and smoothly."
+        description: "We do everything we can to keep you on the road. We can repair most machines: cars, trucks, excavators, tractors."
         icon: "uil uil-wrench"
       - title: "24/7 Towing & Recovery"
         description: "Stranded? We offer reliable, round-the-clock towing and off-road recovery anywhere on the island."
         icon: "uil uil-truck"
       - title: "Roadside Assistance"
-        description: "Dead batteries, lockouts, or flat tires. Just give us a call and we will come directly to you to get you moving again."
+        description: "If your battery is dead, you're locked out, or you have a flat tire, just give us a call and we will come directly to you to get you moving again."
         icon: "uil uil-car-sideview"
 
   - block: banner
@@ -56,7 +56,7 @@ blocks:
       Email: [ezri@northskill.com](mailto:hello@example.com)
 
   - block: carousel
-    title: "We are hard to find if you're new to the island. <br>To Get to the Shop:"
+    title: "We Are Hard To Find If You're New To The Island. <br>To Get to the Shop:"
     images:
       - src: "/images/1.jpg"
         alt: "Take the turning to Heryet Lane, found between the petrol station and the bakery."

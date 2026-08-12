@@ -15,6 +15,8 @@ blocks:
       Driving on Galiano is rough on your car. I can help fix any problems you may have. 
       * **Brake Repair:** Pad replacement, rotor resurfacing, and fluid line checks.
       * **Suspension & Steering:** Shocks, struts, tie rods, and wheel bearings.
+      * **Tires, Wheels & Alignment:** Puncture repairs, tire rotation, rim fixes, and wheel alignment adjustments caused by unpaved roads and deep potholes.
+      * **Drivetrain & Axles:** CV joint replacement, torn axle boots, U-joints, and differential servicing for 4WD and AWD systems.
     image_left: true
     image:
       src: "/images/dacia-2.jpg"
@@ -37,9 +39,9 @@ blocks:
     title: "Pre-Purchase Inspections"
     text: |
       Thinking of buying a car? I can help you make a more informed decision.
-      
-      * **Computer Diagnostics:** Reading and clearing engine codes.
-      * **Electrical Systems:** Battery, alternator, and starter testing.
+      * **Mechanical Checks:** Evaluation of the engine, transmission, brakes, and suspension to catch any flaws.
+      * **Undercarriage  Inspection:** Looking beneath the vehicle for frame damage and corrosion. 
+      * **Computer Diagnostics:** Scanning for trouble codes, hidden engine warnings, and electronic system errors.
     image_left: true
     image:
       src: "/images/dacia-2.jpg"
@@ -50,37 +52,23 @@ blocks:
     text: |
       Stuck on the side of the road? Locked your keys inside the car? Flat battery? In a ditch somewhere? 
       
-      * **Lockout Services:** I can get your keys back. 
-      * **Jump Starts :** I can jump start your battery. Or replace on the side of the road. 
-      * **Vehicle Towing:** If needs be I can tow your car to the shop or to your home.
+      * **Lockout Services:** I can get your keys back or program new ones.
+      * **Jump Starts :** I can jump start your battery. 
+      * **Vehicle Towing:** If needs be I can tow your car to the shop or to your home. Or to the ferry.
     image_left: false
     image:
       src: "/images/dacia-2.jpg"
       alt: "Diagnostic computer plugged into vehicle dash"
-  
 
-  - block: text-image
-    title: "Heavy-Duty Machinery Repairs"
-    text: |
-      Got a truck? Or an excavator? Or a tractor? I can fix those too. Not a boat though. 
-      
-      * **Excavators:** Reading and clearing engine codes.
-      * **Trucks:** Battery, alternator, and starter testing.
-      * **Tractors:** From head gaskets to full engine rebuilds.
-
-    image_left: true
-    image:
-      src: "/images/dacia-2.jpg"
-      alt: "Diagnostic computer plugged into vehicle dash"
 
   - block: text-image
     title: "Need Parts"
     text: |
-      In need of a new battery? Or some oils? I can get those for you at a reasonable price.  
+      In need of a new battery? Or some oils? I can get those for you at a reasonable price. 
       
-      * **Batteries:** 
-      * **Coolant:** 
-      * **Tyres:** 
+      * **General Car Fluids:** Oils, coolants, fuel additives etc.
+      * **OEM and aftermarket parts:** Anything is available upon request within reason.
+      * **General Car Parts & Additions:** Batteries, windscreen wipers, air fresheners etc.
 
     image_left: false
     image:
