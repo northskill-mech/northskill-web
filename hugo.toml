@@ -1,7 +1,7 @@
 baseURL = "https://northskill.com/"
 languageCode = "en-us"
 title = "Northskill"
-
+timeout = "300s"
 
 # Allow raw HTML for the block theme
 [markup]
