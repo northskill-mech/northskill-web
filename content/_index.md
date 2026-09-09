@@ -28,7 +28,7 @@ blocks:
         description: "Stranded? We offer reliable, round-the-clock towing and off-road recovery anywhere on the island."
         icon: "uil uil-truck"
       - title: "Roadside Assistance"
-        description: "If your battery is dead, you're locked out, or you have a flat tire, just give us a call and we will come directly to you to get you moving again."
+        description: "If your battery is dead, you're locked out, or you have a flat tire, give us a call and we will come directly to you to get you moving again."
         icon: "uil uil-car-sideview"
 
   - block: banner
